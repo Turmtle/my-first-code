@@ -1,0 +1,48 @@
+#include <iostream>
+
+using namespace std;
+
+int
+main ()
+{
+  int x;
+  int y;
+  char numOp;
+  char calcYN;
+  cout << "Would You Like To Use Calculator? Y/N";
+  cin >> calcYN;
+  if (calcYN == 'N')
+    {
+      return 0;
+    }
+  else if (calcYN == 'Y')
+    {
+      cout << "Select Operation (+, -, *, /)";
+      cin >> numOp;
+      cout << "First Number";
+      cin >> x;
+      cout << "Second Number";
+      cin >> y;
+      if (numOp == '+')
+	{
+	  int sum = x + y;
+	  cout << sum;
+	}
+      else if (numOp == '-')
+	{
+	  int sumSub = x - y;
+	  cout << sumSub;
+	}
+      else if (numOp == '*')
+	{
+	  int product = x * y;
+	  cout << product;
+	}
+      else if (numOp == '/')
+	{
+	  int productDiv = x / y;
+	  cout << productDiv;
+	}
+    }
+  return 0;
+}
